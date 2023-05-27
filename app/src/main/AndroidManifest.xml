@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCEPT_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BGLResidentProfiling"
+        tools:targetApi="31">
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintGeneratedProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintRadarChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintPieChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintBarChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneratedProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RadarChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PieChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BarChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MappingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB3FQXhRgcDROq555WvXbwFSYzWjedHPY0" />
+    </application>
+
+</manifest>

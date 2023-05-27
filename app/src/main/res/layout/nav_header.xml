@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@drawable/cover"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="BGL Resident Profiling"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="profiling.developer@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+       />
+</LinearLayout>

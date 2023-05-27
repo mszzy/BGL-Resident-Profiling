@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="@drawable/cute_border"
+        android:layout_marginBottom="65dp">
+
+    <ImageView
+        android:layout_width="321.260dp"
+        android:layout_height="321.260dp"
+        android:id="@+id/detailImage"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/uploading"
+        android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Firstname: "
+                    android:textStyle="bold"
+                    android:textColor="@color/cute"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/detailFirst"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Firstname"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Middlename: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+            <TextView
+                android:id="@+id/detailMid"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Middlename"
+                android:textColor="@color/cute"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lastname: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Lastname"
+        android:id="@+id/detailLast"
+        android:textSize="13sp"
+        android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Age: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Age"
+                android:id="@+id/detailAge"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sex: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Sex"
+                android:id="@+id/detailSex"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Birthday: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Birthday"
+                android:id="@+id/detailBirthday"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Marital Status: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Marital Status"
+                android:id="@+id/detailMarital"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Contact No.: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Contact No."
+                android:id="@+id/detailNumber"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Address (Purok #): "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Address"
+                android:id="@+id/detailAddress"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Occupation: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Occupation"
+                android:id="@+id/detailOccu"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Religion: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Religion"
+                android:id="@+id/detailReg"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="House No.: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="House No."
+                android:id="@+id/detailHoNum"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Level of Education: "
+                android:textStyle="bold"
+                android:textColor="@color/cute"
+                android:gravity="center"
+                android:textSize="15sp"
+                ></TextView>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Level of Education"
+                android:id="@+id/detailLevelEduc"
+                android:textSize="13sp"
+                android:textColor="@color/cute"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Solo Parent: "
+                    android:textStyle="bold"
+                    android:textColor="@color/cute"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    ></TextView>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Solo Parent"
+                    android:id="@+id/detailSoloParent"
+                    android:textSize="13sp"
+                    android:textColor="@color/cute"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Registered Senior Citizen: "
+                    android:textStyle="bold"
+                    android:textColor="@color/cute"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    ></TextView>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Senior Citizen"
+                    android:id="@+id/detailSeniorCitiz"
+                    android:textSize="13sp"
+                    android:textColor="@color/cute"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Registered Voter: "
+                    android:textStyle="bold"
+                    android:textColor="@color/cute"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    ></TextView>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Registered Voter"
+                    android:id="@+id/detailRegisVoter"
+                    android:textSize="13sp"
+                    android:textColor="@color/cute"/>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:menu_colorNormal="@color/cute"
+                    app:menu_colorPressed="@color/cute"
+                    app:menu_fab_size="normal"
+                    app:menu_icon="@drawable/baseline_format_list_bulleted_24"
+                    app:menu_openDirection="up"
+                    app:menu_showShadow="true">
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/editButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_edit_24"
+                        app:fab_colorNormal="@color/green"
+                        app:fab_showShadow="true"
+                        app:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/deleteButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_delete_24"
+                        app:fab_colorNormal="@color/red"
+                        app:fab_showShadow="true"
+                        app:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/printButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/print_24"
+                        app:fab_colorNormal="@color/teal_200"
+                        app:fab_showShadow="true"
+                        app:fab_size="mini" />
+
+                </com.github.clans.fab.FloatingActionMenu>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

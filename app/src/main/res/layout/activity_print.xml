@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:onClick="createMyPDF"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/cute_border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="321.260dp"
+                android:layout_height="321.260dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/uploading" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Firstname: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailFirst"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Firstname"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Middlename: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailMid"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Middlename"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Lastname: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailLast"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Lastname"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Age: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailAge"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Age"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Sex: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailSex"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Sex"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Birthday: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailBirthday"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Birthday"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Marital Status: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailMarital"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Marital Status"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Contact No.: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailNumber"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Contact No."
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Address (Purok #): "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailAddress"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Address"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Occupation: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailOccu"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Occupation"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Religion: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailReg"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Religion"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="House No.: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailHoNum"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="House No."
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Level of Education: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailLevelEduc"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Level of Education"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Solo Parent: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailSoloParent"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Solo Parent"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Registered Senior Citizen: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailSeniorCitiz"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Senior Citizen"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Registered Voter: "
+                    android:textColor="@color/cute"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detailRegisVoter"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Registered Voter"
+                    android:textColor="@color/cute"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/printProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:text="Create PDF">
+
+            </Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

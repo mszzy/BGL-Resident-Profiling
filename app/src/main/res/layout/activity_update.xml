@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/cute_border"
+            android:layout_marginBottom="65dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Data"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/cute"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update image"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/cute"/>
+            <ImageView
+                android:layout_width="321.260dp"
+                android:layout_height="321.260dp"
+                android:src="@drawable/uploading"
+                android:id="@+id/updateImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateFirst"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Firstname"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:id="@+id/updateMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/orange_border"
+                android:gravity="start|center_vertical"
+                android:hint="Middlename"
+                android:padding="16dp"
+                android:textColor="@color/cute" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateLast"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Lastname"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateAge"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Age"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateSex"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Sex"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateBirthday"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Birthday (MM/DD/YYYY)"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateMarital"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Marital Status"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateNumber"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Contact Number"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/updateAddress"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Address (Purok#/Mun./Prov.)"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateOccu"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Occupation (N/A - no occu.)"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateReg"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Religion"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateHoNum"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Household No."
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateLevelEduc"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Level of Education"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/updateSoloParent"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Solo Parent (Yes/No) (N/A)"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/updateSeniorCitizen"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Registered Senior Citizen (Yes/No) (N/A)"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/updateRegisteredVoter"
+                android:background="@drawable/orange_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Registered Voter (Yes/No) (N/A)"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/cute"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Update Data"
+                android:id="@+id/updateButton"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "635223771457",
+    "firebase_url": "https://bgl-resident-profiling-default-rtdb.firebaseio.com",
+    "project_id": "bgl-resident-profiling",
+    "storage_bucket": "bgl-resident-profiling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635223771457:android:03fe989809ea0b844a39c0",
+        "android_client_info": {
+          "package_name": "com.example.bglresidentprofiling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635223771457-idrt8v77odqt4hq01vqc0p0c840eoog1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp1O1HGjaV1vJwYeWTVC9rzEQi8Ya4W7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635223771457-idrt8v77odqt4hq01vqc0p0c840eoog1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

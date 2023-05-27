@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aaa"
+    tools:context=".PrintFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:background="@drawable/orange_border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Print Reports"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="_______________"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_pc"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded"
+                android:text="Population Count">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_ag"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded"
+                android:text="age-group Count Report">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_rv"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded"
+                android:text="Registered Voters">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_rl"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:text="Residents List">
+
+            </Button>
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
