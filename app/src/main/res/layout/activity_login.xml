@@ -17,7 +17,7 @@
         android:layout_marginTop="20dp"
         android:textColor="#ffffff"
         android:text="Welcome, Please Login"
-        android:textSize="28sp"
+        android:textSize="29sp"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
