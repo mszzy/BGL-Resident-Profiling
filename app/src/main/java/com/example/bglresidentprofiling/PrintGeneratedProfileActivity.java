@@ -90,13 +90,13 @@ public class PrintGeneratedProfileActivity extends AppCompatActivity {
                 "   " + "\n" +
                 "          " + "Firstname  |  Middlename   |  Lastname" + "   " + "\n" +
                 "   " + "\n" +
-                "     " + "1. Nina Basa Frnilla" + "\n" +
+                "     " + "1. Nina Basa Frenilla" + "\n" +
                 "     " + "2. Mari Ystinelli Axsa Cabrera" + "\n" +
                 "     " + "3. Andrew Rivera Santos" + "\n" +
                 "     " + "4. Arnel De leon Francisco" + "\n" +
                 "     " + "5. Jenny Bartolome Malit" + "\n" +
                 "     " + "6. Susan Balbuena Paule" + "\n" +
-                "     " + "7. Micaela Abanilla Pangan" + "\n" +
+                "     " + "7. Micaella Abanilla Pangan" + "\n" +
                 "     " + "8. Robert Samson Jardino" + "\n" +
                 "     " + "9. Rolando Toreno Singca" + "\n" +
                 "     " + "10. Maria Salazar Penaloza" + "\n" +
