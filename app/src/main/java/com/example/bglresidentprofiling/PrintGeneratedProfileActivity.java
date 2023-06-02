@@ -88,19 +88,19 @@ public class PrintGeneratedProfileActivity extends AppCompatActivity {
         String myString = "   " + "\n" +
                 "----------------------------- " + "List of Residents" + " -----------------------------" + "\n" +
                 "   " + "\n" +
-                "          " + "Firstname  |  Middlename   |  Lastname" + "   " + "\n" +
+                "          " + "Lastname  |  Firstname   |  Middlename" + "   " + "\n" +
                 "   " + "\n" +
-                "     " + "1. Nina Basa Frenilla" + "\n" +
-                "     " + "2. Mari Ystinelli Axsa Cabrera" + "\n" +
-                "     " + "3. Andrew Rivera Santos" + "\n" +
-                "     " + "4. Arnel De leon Francisco" + "\n" +
-                "     " + "5. Jenny Bartolome Malit" + "\n" +
-                "     " + "6. Susan Balbuena Paule" + "\n" +
-                "     " + "7. Micaella Abanilla Pangan" + "\n" +
-                "     " + "8. Robert Samson Jardino" + "\n" +
-                "     " + "9. Rolando Toreno Singca" + "\n" +
-                "     " + "10. Maria Salazar Penaloza" + "\n" +
-                "     " + "11. Maycie Dela Cruz Sanchez" + "\n" +
+                "     " + "1. Cabrera, Mari Ystinelli A." + "\n" +
+                "     " + "2. Francisco, Arnel D." + "\n" +
+                "     " + "3. Frenilla, Nina B." + "\n" +
+                "     " + "4. Jardino, Robert S." + "\n" +
+                "     " + "5. Malit, Jenny B." + "\n" +
+                "     " + "6. Pangan, Micaella A." + "\n" +
+                "     " + "7. Paule, Susan B." + "\n" +
+                "     " + "8. Penaloza, Maria S." + "\n" +
+                "     " + "9. Sanchez, Maycie D." + "\n" +
+                "     " + "10. Santos, Andrew R." + "\n" +
+                "     " + "11. Singca, Rolando T." + "\n" +
                 "     " + "          " + "    " + "\n";
 
         int x = 10, y = 25;
