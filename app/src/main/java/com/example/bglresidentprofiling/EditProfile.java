@@ -1,5 +1,6 @@
 package com.example.bglresidentprofiling;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+
 public class EditProfile extends AppCompatActivity {
     EditText editName, editEmail, editUsername, editPassword;
     Button saveButton, backButton;
@@ -33,8 +41,9 @@ public class EditProfile extends AppCompatActivity {
                     Toast.makeText(EditProfile.this, "Saved", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(EditProfile.this, LoginActivity.class);
                     startActivity(intent);
+                    finish();
                 } else {
-                    Toast.makeText(EditProfile.this, "No Changes Found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "No Changes Found", Toast.LENGTH_SHORT).show();
                 }
             }
         });

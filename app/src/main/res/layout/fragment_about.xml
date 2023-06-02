@@ -20,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="560dp"
+            android:layout_height="460dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/orange_border"
             android:orientation="vertical"
@@ -35,7 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="cursive"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="3dp"
                     android:layout_gravity="center"
                     android:text="Data Privacy Policy"
                     android:textSize="30sp"
@@ -70,7 +70,7 @@
                     android:fontFamily="monospace"
                     android:textAlignment="center"
                     android:text="Confidential profile information (residents' personal details such as names, addresses, and contact numbers) that is collected and stored in the application shall be treated with utmost confidentiality and integrity. These stored information shall then be taken into the Barangay administrators' safekeeping to be used for its residential management purposes. It shall also comply with the Republic Act No. 10173 or Data Privacy Act of 2012 and uphold the rights of the data subjects and to process data according to the privacy principles of transparency, legitimate purpose, and proportionality. "
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 8/
             </LinearLayout>
