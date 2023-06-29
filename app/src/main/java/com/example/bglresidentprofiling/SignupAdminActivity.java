@@ -19,20 +19,21 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-public class SignupActivity extends AppCompatActivity {
+
+public class SignupAdminActivity extends AppCompatActivity {
     EditText signupName, signupUsername, signupEmail, signupPassword;
     TextView loginRedirectText;
     Button signupButton, button2;
     FirebaseDatabase database;
     DatabaseReference reference;
     private ProgressDialog loading;
-
     private FirebaseAuth auth;
     private FirebaseUser user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_signup_admin);
         signupName = findViewById(R.id.signup_name);
         signupEmail = findViewById(R.id.signup_email);
         signupUsername = findViewById(R.id.signup_username);
@@ -58,17 +59,17 @@ public class SignupActivity extends AppCompatActivity {
                 loading.setMessage("Please wait.");
                 loading.setCanceledOnTouchOutside(false);
                 loading.show();
-                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SignupAdminActivity.this, LoginActivity.class);
                 auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             user=auth.getCurrentUser();
                             user.sendEmailVerification();
-                            Toast.makeText(SignupActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupAdminActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
                             startActivity(intent);
                         } else if (!task.isSuccessful()) {
-                            Toast.makeText(SignupActivity.this,task.getException().getLocalizedMessage(),Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupAdminActivity.this,task.getException().getLocalizedMessage(),Toast.LENGTH_SHORT).show();
 
                         }
                         loading.dismiss();
@@ -80,14 +81,14 @@ public class SignupActivity extends AppCompatActivity {
         loginRedirectText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SignupAdminActivity.this, LoginAdminActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignupActivity.this, SignupAdminActivity.class);
+                Intent intent = new Intent(SignupAdminActivity.this, SignupActivity.class);
                 startActivity(intent);
             }
         });

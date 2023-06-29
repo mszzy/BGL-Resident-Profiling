@@ -27,26 +27,25 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-public class PrintPieChartActivity extends AppCompatActivity {
+public class PrintSoloParentActivity extends AppCompatActivity {
 
-    Button printAG;
+    Button printSoloParent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_print_pie_chart);
-        printAG = findViewById(R.id.printAG);
+        setContentView(R.layout.activity_print_solo_parent);
+        printSoloParent = findViewById(R.id.printSoloParent);
 
-        PieChart pieChart = findViewById(R.id.pieChart);
+        PieChart pieChart = findViewById(R.id.parentChart);
 
         ArrayList<PieEntry> profiles = new ArrayList<>();
-        profiles.add(new PieEntry(1, "Children"));
-        profiles.add(new PieEntry(2, "Teenager"));
-        profiles.add(new PieEntry(15, "Adult"));
-        profiles.add(new PieEntry(4, "Senior Citizen"));
+        profiles.add(new PieEntry(3, "Yes"));
+        profiles.add(new PieEntry(3, "No"));
+        profiles.add(new PieEntry(16, "Not Applicable"));
 
-        PieDataSet pieDataSet = new PieDataSet(profiles, "Age Group Count");
-        pieDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
+        PieDataSet pieDataSet = new PieDataSet(profiles, "Solo Parent");
+        pieDataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
         pieDataSet.setValueTextColor(Color.BLACK);
         pieDataSet.setValueTextSize(16f);
 
@@ -54,11 +53,11 @@ public class PrintPieChartActivity extends AppCompatActivity {
 
         pieChart.setData(pieData);
         pieChart.getDescription().setEnabled(false);
-        pieChart.setCenterText("Residents Report");
+        pieChart.setCenterText("Solo Parent Report");
         pieChart.animate();
-        ActivityCompat.requestPermissions(PrintPieChartActivity.this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
+        ActivityCompat.requestPermissions(PrintSoloParentActivity.this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
-        printAG.setOnClickListener(new View.OnClickListener() {
+        printSoloParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 createPDF();
@@ -77,42 +76,40 @@ public class PrintPieChartActivity extends AppCompatActivity {
         String myString = "   " + "\n" +
                 "------------------------------------------------------- "+"Statistical Data" + " -------------------------------------------------------" + "\n" +
                 "   " + "\n" +
-                "   " + "Classification     |    Age range   |        Count" + "   " + "\n" +
-                "     " + "      Children:                 0-12                      1" + "    " + "\n" +
+                "   " + "Solo Parent Report of Brgy. General Lim" + "   " + "\n" +
+                "     " + "                      Residents          |          Count" + "    " + "\n" +
+                "     " + "             Responded 'Yes'                                3" + "    " + "\n" +
                 "     " + "      List of names:" + "    " + "\n" +
-                "     " + "      1. Santos, Andrew Rivera" + "    " + "\n" +
+                "     " + "      1. Pangan, Micaella Abanilla" + "    " + "\n" +
+                "     " + "      2. Sanchez, Maycie Dela Cruz" + "    " + "\n" +
+                "     " + "      3. Singca, Rolando Toreno" + "    " + "\n" +
                 "   " + "\n" +
-                "     " + "      Teenager:               13-19                    2" + "    " + "\n" +
+                "     " + "             Responded 'No'                                  3" + "    " + "\n" +
                 "     " + "      List of names:" + "    " + "\n" +
-                "     " + "      1. De Jesus, Carlo John Bartolo" + "    " + "\n" +
-                "     " + "      2. Frenilla, Nina Basa" + "    " + "\n" +
+                "     " + "      1. Francisco, Arnel De Leon" + "    " + "\n" +
+                "     " + "      2. Malit, Jenny Bartolome" + "    " + "\n" +
+                "     " + "      3. Paule, Susan Balbuena" + "    " + "\n" +
                 "   " + "\n" +
-                "     " + "      Adult:                      20-59                   15" + "    " + "\n" +
+                "     " + "             Responded 'N/A'                               16" + "    " + "\n" +
                 "     " + "      List of names:" + "    " + "\n" +
                 "     " + "      1. Alonzo, Angeline Crisanto" + "    " + "\n" +
                 "     " + "      2. Alonzo, Rhoden Fernando" + "    " + "\n" +
                 "     " + "      3. Aquino, Alliya Cruz" + "    " + "\n" +
                 "     " + "      4. Basa, Camille Delgado" + "    " + "\n" +
                 "     " + "      5. Cabrera, Mari Ystinelli Axsa" + "    " + "\n" +
-                "     " + "      6. Francisco, Arnel De Leon" + "    " + "\n" +
-                "     " + "      7. Hernandez, Gabriel Hanz Macabre" + "    " + "\n" +
-                "     " + "      8. Malit, Jenny Bartolome" + "    " + "\n" +
-                "     " + "      9. Naquil, Kristine Den Hoson" + "    " + "\n" +
-                "     " + "      10. Pangan, Micaella Abanilla" + "    " + "\n" +
-                "     " + "      11. Paule, Susan Balbuena" + "    " + "\n" +
+                "     " + "      6. De Jesus, Carlo John Bartolo" + "    " + "\n" +
+                "     " + "      7. Frenilla, Nina Basa" + "    " + "\n" +
+                "     " + "      8. Hernandez, Gabriel Hanz Macabre" + "    " + "\n" +
+                "     " + "      9. Jardino, Robert Samson" + "    " + "\n" +
+                "     " + "      10. Naquil, Kristine Den Hoson" + "    " + "\n" +
+                "     " + "      11. Penaloza, Maria Salazar" + "    " + "\n" +
                 "     " + "      12. Samoza, Celine Montecarlo" + "    " + "\n" +
                 "     " + "      13. Sanggalang, Marry Ann Santos" + "    " + "\n" +
-                "     " + "      14. Singca, Karen Kipte" + "    " + "\n" +
-                "     " + "      15. Sison, Gene Layug" + "    " + "\n" +
+                "     " + "      14. Santos, Andrew Rivera" + "    " + "\n" +
+                "     " + "      15. Singca, Karen Kipte" + "    " + "\n" +
+                "     " + "      16. Sison, Gene Layug" + "    " + "\n" +
                 "   " + "\n" +
-                "     " + "      Senior Citizen:        60+                      4" + "    " + "\n" +
-                "     " + "      List of names:" + "    " + "\n" +
-                "     " + "      1. Jardino, Robert Samson" + "    " + "\n" +
-                "     " + "      2. Penaloza, Maria Salazar" + "    " + "\n" +
-                "     " + "      3. Sanchez, Maycie Dela Cruz" + "    " + "\n" +
-                "     " + "      4. Singca, Rolando Toreno" + "    " + "\n" +
-                "   " + "\n" +
-                "  " + "Percentage of Senior citizen:   18%" + "    " + "\n";
+                "  " + "Percentage of Solo Parent:   13%" + "    " + "\n";
 
         int x = 10, y = 25;
 
@@ -125,7 +122,7 @@ public class PrintPieChartActivity extends AppCompatActivity {
 
         try {
             String myFilePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString();
-            File myFile = new File(myFilePath, "Age-Group Report.pdf");
+            File myFile = new File(myFilePath, "Solo Parent Report.pdf");
 
             OutputStream outputStream = new FileOutputStream(myFile);
             myPdfDocument.writeTo(outputStream);

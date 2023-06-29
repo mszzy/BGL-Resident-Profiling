@@ -78,29 +78,8 @@
                 android:hint="Lastname"
                 android:gravity="start|center_vertical"
                 android:textColor="@color/cute"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/updateAge"
-                android:background="@drawable/orange_border"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Age"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/updateSex"
-                android:background="@drawable/orange_border"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Sex"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
-
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/updateBirthday"
@@ -114,13 +93,33 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/updateMarital"
+                android:id="@+id/updateAge"
                 android:background="@drawable/orange_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Marital Status"
+                android:hint="Age"
                 android:gravity="start|center_vertical"
                 android:textColor="@color/cute"/>
+
+
+            <Spinner
+                android:id="@+id/updateSex"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+
+            <Spinner
+                android:id="@+id/updateMarital"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -133,16 +132,16 @@
                 android:gravity="start|center_vertical"
                 android:textColor="@color/cute"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
+
+            <Spinner
                 android:id="@+id/updateAddress"
-                android:background="@drawable/orange_border"
+                android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Address (Purok#/Mun./Prov.)"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -155,16 +154,16 @@
                 android:gravity="start|center_vertical"
                 android:textColor="@color/cute"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
+
+            <Spinner
                 android:id="@+id/updateReg"
-                android:background="@drawable/orange_border"
+                android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Religion"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -177,49 +176,44 @@
                 android:gravity="start|center_vertical"
                 android:textColor="@color/cute"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
+            <Spinner
                 android:id="@+id/updateLevelEduc"
-                android:background="@drawable/orange_border"
+                android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Level of Education"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
+
+            <Spinner
                 android:id="@+id/updateSoloParent"
-                android:background="@drawable/orange_border"
+                android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Solo Parent (Yes/No) (N/A)"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
+            <Spinner
                 android:id="@+id/updateSeniorCitizen"
-                android:background="@drawable/orange_border"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Registered Senior Citizen (Yes/No) (N/A)"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
-
-            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:id="@+id/updateRegisteredVoter"
-                android:background="@drawable/orange_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Registered Voter (Yes/No) (N/A)"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/cute"/>
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+
+            <Spinner
+                android:id="@+id/updateRegisteredVoter"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:background="@drawable/orange_border"
+                android:layout_height="?actionBarSize"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
 
             <Button
                 android:layout_width="match_parent"

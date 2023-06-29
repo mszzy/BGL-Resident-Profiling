@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginAdminActivity extends AppCompatActivity {
     EditText loginUsername, loginPassword;
     Button loginButton, button1;
     TextView signupRedirectText;
@@ -37,10 +36,11 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseUser user;
     private DatabaseReference referencePass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_admin);
         resetPass=findViewById(R.id.forgotPass);
         loginUsername = findViewById(R.id.login_username);
         loginPassword = findViewById(R.id.login_password);
@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
         signupRedirectText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                Intent intent = new Intent(LoginAdminActivity.this, SignupActivity.class);
                 startActivity(intent);
             }
         });
@@ -78,14 +78,14 @@ public class LoginActivity extends AppCompatActivity {
         resetPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, ResetActivity.class);
+                Intent intent = new Intent(LoginAdminActivity.this, ResetActivity.class);
                 startActivity(intent);
             }
         });
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, LoginAdminActivity.class);
+                Intent intent = new Intent(LoginAdminActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -121,50 +121,50 @@ public class LoginActivity extends AppCompatActivity {
                 if (snapshot.exists()){
                     loginUsername.setError(null);
                     String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
-                        loginUsername.setError(null);
-                        String nameFromDB = snapshot.child(userUsername).child("name").getValue(String.class);
-                        String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
-                        String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
-                        Intent intent = new Intent(LoginActivity.this, PersonnelMainActivity.class);
-                        intent.putExtra("name", nameFromDB);
-                        intent.putExtra("email", emailFromDB);
-                        intent.putExtra("username", usernameFromDB);
-                        intent.putExtra("password", userPassword);
-                        auth.signInWithEmailAndPassword(emailFromDB,userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()){
-                                    user=auth.getCurrentUser();
-                                    if (user.isEmailVerified()){
-                                        referencePass.child("users").child(loginUsername.getText().toString()).addValueEventListener(new ValueEventListener() {
-                                            @Override
-                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                if (snapshot.exists()) {
-                                                    HashMap<String, Object> userMap=new HashMap<>();
-                                                    userMap.put("password",userPassword);
-                                                    referencePass.child("users").child(loginUsername.getText().toString()).updateChildren(userMap);
-                                                }
+                    loginUsername.setError(null);
+                    String nameFromDB = snapshot.child(userUsername).child("name").getValue(String.class);
+                    String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
+                    String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
+                    Intent intent = new Intent(LoginAdminActivity.this, MainActivity.class);
+                    intent.putExtra("name", nameFromDB);
+                    intent.putExtra("email", emailFromDB);
+                    intent.putExtra("username", usernameFromDB);
+                    intent.putExtra("password", userPassword);
+                    auth.signInWithEmailAndPassword(emailFromDB,userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()){
+                                user=auth.getCurrentUser();
+                                if (user.isEmailVerified()){
+                                    referencePass.child("users").child(loginUsername.getText().toString()).addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                            if (snapshot.exists()) {
+                                                HashMap<String, Object> userMap=new HashMap<>();
+                                                userMap.put("password",userPassword);
+                                                referencePass.child("users").child(loginUsername.getText().toString()).updateChildren(userMap);
                                             }
+                                        }
 
-                                            @Override
-                                            public void onCancelled(@NonNull DatabaseError error) {
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
 
-                                            }
-                                        });
-                                        loading.dismiss();
-                                        startActivity(intent);
-                                    } else {
-                                        loading.dismiss();
-                                        Toast.makeText(LoginActivity.this, "Verify email", Toast.LENGTH_SHORT).show();
-                                        user.sendEmailVerification();
-                                    }
-                                } else if(!task.isSuccessful()) {
+                                        }
+                                    });
                                     loading.dismiss();
-                                    loginPassword.setError("Password is not correct");
-                                    loginPassword.requestFocus();
+                                    startActivity(intent);
+                                } else {
+                                    loading.dismiss();
+                                    Toast.makeText(LoginAdminActivity.this, "Verify email", Toast.LENGTH_SHORT).show();
+                                    user.sendEmailVerification();
                                 }
+                            } else if(!task.isSuccessful()) {
+                                loading.dismiss();
+                                loginPassword.setError("Password is not correct");
+                                loginPassword.requestFocus();
                             }
-                        });
+                        }
+                    });
                 } else {
                     loading.dismiss();
                     loginUsername.setError("User does not exist");

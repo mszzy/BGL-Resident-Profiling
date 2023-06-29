@@ -79,28 +79,39 @@ public class PrintGeneratedProfileActivity extends AppCompatActivity {
 
     public void createPDF() {
         PdfDocument myPdfDocument = new PdfDocument();
-        PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(300, 400, 1).create();
+        PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(450, 600, 1).create();
         PdfDocument.Page myPage = myPdfDocument.startPage(myPageInfo);
 
 
         Paint myPaint = new Paint();
 
         String myString = "   " + "\n" +
-                "----------------------------- " + "List of Residents" + " -----------------------------" + "\n" +
+                "------------------------------------------------------- " + "List of Residents" + " -------------------------------------------------------" + "\n" +
                 "   " + "\n" +
                 "          " + "Lastname  |  Firstname   |  Middlename" + "   " + "\n" +
                 "   " + "\n" +
-                "     " + "1. Cabrera, Mari Ystinelli A." + "\n" +
-                "     " + "2. Francisco, Arnel D." + "\n" +
-                "     " + "3. Frenilla, Nina B." + "\n" +
-                "     " + "4. Jardino, Robert S." + "\n" +
-                "     " + "5. Malit, Jenny B." + "\n" +
-                "     " + "6. Pangan, Micaella A." + "\n" +
-                "     " + "7. Paule, Susan B." + "\n" +
-                "     " + "8. Penaloza, Maria S." + "\n" +
-                "     " + "9. Sanchez, Maycie D." + "\n" +
-                "     " + "10. Santos, Andrew R." + "\n" +
-                "     " + "11. Singca, Rolando T." + "\n" +
+                "     " + "1. Alonzo, Angeline C." + "\n" +
+                "     " + "2. Alonzo, Rhoden F." + "\n" +
+                "     " + "3. Aquino, Alliya C." + "\n" +
+                "     " + "4. Basa, Camille D." + "\n" +
+                "     " + "5. Cabrera, Mari Ystinelli A." + "\n" +
+                "     " + "6. De Jesus, Carlo John B." + "\n" +
+                "     " + "7. Francisco, Arnel D." + "\n" +
+                "     " + "8. Frenilla, Nina B." + "\n" +
+                "     " + "9. Hernandez, Gabriel Hanz M." + "\n" +
+                "     " + "10. Jardino, Robert S." + "\n" +
+                "     " + "11. Malit, Jenny B." + "\n" +
+                "     " + "12. Naquil, Kristine Den H." + "\n" +
+                "     " + "13. Pangan, Micaella A." + "\n" +
+                "     " + "14. Paule, Susan B." + "\n" +
+                "     " + "15. Penaloza, Maria S." + "\n" +
+                "     " + "16. Samoza, Celine M." + "\n" +
+                "     " + "17. Sanchez, Maycie D." + "\n" +
+                "     " + "18. Sanggalang, Marry Ann S." + "\n" +
+                "     " + "19. Santos, Andrew R." + "\n" +
+                "     " + "20. Singca, Karen K." + "\n" +
+                "     " + "21. Singca, Rolando T." + "\n" +
+                "     " + "22. Sison, Gene L." + "\n" +
                 "     " + "          " + "    " + "\n";
 
         int x = 10, y = 25;

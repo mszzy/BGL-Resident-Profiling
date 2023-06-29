@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class PrintFragment extends Fragment {
 
-    TextView btn_pc, btn_ag, btn_rv, btn_rl;
+    TextView btn_pc, btn_ag, btn_rv, btn_rl, btn_gr, btn_soloParent;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -20,6 +20,8 @@ public class PrintFragment extends Fragment {
         btn_ag = rootView.findViewById(R.id.btn_ag);
         btn_rv = rootView.findViewById(R.id.btn_rv);
         btn_rl = rootView.findViewById(R.id.btn_rl);
+        btn_gr = rootView.findViewById(R.id.btn_gr);
+        btn_soloParent = rootView.findViewById(R.id.btn_soloParent);
 
         btn_pc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,22 @@ public class PrintFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(requireContext(), PrintGeneratedProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_gr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(requireContext(), PrintGenderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_soloParent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(requireContext(), PrintSoloParentActivity.class);
                 startActivity(intent);
             }
         });

@@ -20,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="500dp"
             android:layout_gravity="center"
             android:background="@drawable/orange_border"
             android:orientation="vertical"
@@ -103,6 +103,30 @@
                 android:background="@drawable/rounded"
                 android:layout_gravity="center"
                 android:text="Residents List">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_gr"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:text="Sex Report">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_soloParent"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:text="Solo Parent Report">
 
             </Button>
 

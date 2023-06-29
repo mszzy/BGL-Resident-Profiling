@@ -73,12 +73,12 @@ public class BarChartActivity extends AppCompatActivity {
         barDataCharts.clear();
         barDataCharts.add(new BarDataChart("Purok 1 GL", 3));
         barDataCharts.add(new BarDataChart("Purok 2 GL", 1));
-        barDataCharts.add(new BarDataChart("Purok 3 GL", 2));
-        barDataCharts.add(new BarDataChart("Purok 4 GL", 0));
-        barDataCharts.add(new BarDataChart("Purok 5 GL", 2));
-        barDataCharts.add(new BarDataChart("Purok 6 GL", 1));
+        barDataCharts.add(new BarDataChart("Purok 3 GL", 3));
+        barDataCharts.add(new BarDataChart("Purok 4 GL", 7));
+        barDataCharts.add(new BarDataChart("Purok 5 GL", 3));
+        barDataCharts.add(new BarDataChart("Purok 6 GL", 2));
         barDataCharts.add(new BarDataChart("Purok 7 GL", 1));
-        barDataCharts.add(new BarDataChart("Purok 8 GL", 1));
+        barDataCharts.add(new BarDataChart("Purok 8 GL", 2));
 
 
     }

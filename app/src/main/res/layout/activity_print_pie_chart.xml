@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
     tools:context=".PieChartActivity"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:layout_marginTop="15dp"
@@ -32,7 +37,7 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="      Children:                          0-12                          1" />
+        android:text="  Children:                          0-12                          1" />
 
     <TextView
         android:layout_marginTop="5dp"
@@ -41,7 +46,26 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="      Teenager:                        13-19                        2" />
+        android:text="      List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      1. Santos, Andrew Rivera" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="  Teenager:                        13-19                         2" />
+
     <TextView
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
@@ -49,7 +73,32 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="      Adult:                                20-59                       4" />
+        android:text="      List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      1. De Jesus, Carlo John Bartolo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      2. Frenilla, Nina Basa" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="  Adult:                               20-59                        15" />
+
     <TextView
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
@@ -57,7 +106,162 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="      Senior Citizen:                   60+                         4"
+        android:text="      List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      1. Alonzo, Angeline Crisanto" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      2. Alonzo, Rhoden Fernando" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      3. Aquino, Alliya Cruz" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      4. Basa, Camille Delgado" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      5. Cabrera, Mari Ystinelli Axsa" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      6. Francisco, Arnel De Leon" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      7. Hernandez, Gabriel Hanz Macabre" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      8. Malit, Jenny Bartolome" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      9. Naquil, Kristine Den Hoson" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      10. Pangan, Micaella Abanilla" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      11. Paule, Susan Balbuena" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      12. Samoza, Celine Montecarlo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      13. Sanggalang, Marry Ann Santos" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      14. Singca, Karen Kipte" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      15. Sison, Gene Layug" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="  Senior Citizen:                   60+                          4"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      1. Jardino, Robert Samson" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      2. Penaloza, Maria Salazar" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      3. Sanchez, Maycie Dela Cruz" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="      4. Singca, Rolando Toreno"
         android:layout_marginBottom="10dp"/>
 
     <TextView
@@ -67,7 +271,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginLeft="10dp"
-        android:text="Percentage of Senior citizen:                 36%"
+        android:text="Percentage of Senior citizen:                 18%"
         android:layout_marginBottom="15dp"/>
 
     <Button
@@ -89,5 +293,5 @@
             android:layout_height="match_parent"/>
 
     </LinearLayout>
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

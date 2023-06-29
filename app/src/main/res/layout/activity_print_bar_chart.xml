@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BarChartActivity"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:layout_marginTop="10dp"
@@ -23,13 +28,24 @@
         android:textSize="17sp"
         android:layout_marginLeft="20dp"
         android:text="Address: Brgy. General Lim  |  Population Count" />
+
     <TextView
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 1:                                         3" />
+        android:text="             Purok 1:                                                   3" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
 
     <TextView
         android:layout_width="match_parent"
@@ -37,50 +53,318 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 2:                                         1" />
+        android:text="                                1. Pangan, Micaella Abanilla" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 3:                                         2" />
+        android:text="                                2. Santos, Andrew Rivera" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 4:                                         0" />
+        android:text="                                3. Singca, Rolando Toreno" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 2:                                                   1" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 5:                                         2" />
+        android:text="                                1. Frenilla, Nina Basa" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 3:                                                   3" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 6:                                         1" />
+        android:text="                                1. Malit, Jenny Bartolome" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 7:                                         1" />
+        android:text="                                2. Naquil, Kristine Den Hoson" />
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
-        android:text="             Purok 8:                                         1"
+        android:text="                                3. Paule, Susan Balbuena" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 4:                                                   7" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                1. Alonzo, Angeline Crisanto" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                2. Basa, Camille Delgado" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                3. De Jesus, Carlo John Bartolo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                4. Hernandez, Gabriel Hanz Macabre" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                5. Samoza, Celine Montecarlo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                6. Singca, Karen Kipte" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                7. Sison, Gene Layug" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 5:                                                   3" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                1. Jardino, Robert Samson" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                2. Penaloza, Maria Salazar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                3. Sanggalang, Marry Ann Santos" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 6:                                                   2" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                1. Alonzo, Rhoden Fernando" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                2. Cabrera, Mari Ystinelli Axsa" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 7:                                                   1" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                1. Francisco, Arnel De Leon" />
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="             Purok 8:                                                   2"
         android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                             List of names:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                1. Aquino, Alliya Cruz" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text="                                2. Sanchez, Maycie Dela Cruz" />
+
+
+
     <TextView
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
@@ -88,7 +372,7 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_marginLeft="10dp"
-        android:text="Total Population Count:                     11"
+        android:text="Total Population Count:                     22"
         android:layout_marginBottom="7dp"/>
 
     <Button
@@ -109,6 +393,5 @@
             android:layout_height="match_parent"/>
 
     </LinearLayout>
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

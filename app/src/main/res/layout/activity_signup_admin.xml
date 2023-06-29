@@ -7,16 +7,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/black"
     android:orientation="vertical"
-    tools:context=".SignupActivity">
+    tools:context=".SignupAdminActivity">
 
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="216dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="212dp"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
         android:backgroundTint="@color/black"
-        android:text=" Switch to Admin        "
+        android:text=" Switch to Brgy. Personnel         "
         android:textSize="13sp"
         android:textStyle="italic"
         app:cornerRadius="20dp"

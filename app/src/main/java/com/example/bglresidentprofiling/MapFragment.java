@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 
 public class MapFragment extends Fragment {
-    TextView btnBar, btnPie, btnRadar, btnProfile;
+    TextView btnBar, btnPie, btnRadar, btnProfile, btnGender, btnSolo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +27,8 @@ public class MapFragment extends Fragment {
         btnPie = rootView.findViewById(R.id.btn_pie);
         btnRadar = rootView.findViewById(R.id.btn_radar);
         btnProfile = rootView.findViewById(R.id.btn_profile);
+        btnGender = rootView.findViewById(R.id.btn_gender);
+        btnSolo = rootView.findViewById(R.id.btn_solo);
 
 
         btnBar.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +60,22 @@ public class MapFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(requireContext(), GeneratedProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(requireContext(), GenderReportActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSolo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(requireContext(), SoloParentActivity.class);
                 startActivity(intent);
             }
         });

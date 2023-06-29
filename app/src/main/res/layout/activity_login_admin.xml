@@ -6,22 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/black"
-    tools:context=".LoginActivity">
+    tools:context=".LoginAdminActivity">
 
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="216dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="212dp"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="228dp"
         android:backgroundTint="@color/black"
-        android:text="Brgy. Personnel        "
+        android:text="  Administrator "
+        android:textAlignment="viewStart"
         android:textSize="13sp"
         android:textStyle="italic"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -42,12 +43,12 @@
             android:fontFamily="cursive"
             android:gravity="center"
             android:text="   Login"
-            android:textSize="40sp"
             android:textColor="#000000"
+            android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,24 +96,24 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="32dp">
-        
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:background="#707070"/>
 
-        <TextView
-            android:id="@+id/signupRedirectText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="serif"
-            android:padding="8dp"
-            android:text="Not yet registered? Sign Up"
-            android:textColor="@color/cute"
-            android:textSize="15sp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="#707070"/>
+
+            <TextView
+                android:id="@+id/signupRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:padding="8dp"
+                android:text="Not yet registered? Sign Up"
+                android:textColor="@color/cute"
+                android:textSize="15sp" />
 
             <View
                 android:layout_width="wrap_content"

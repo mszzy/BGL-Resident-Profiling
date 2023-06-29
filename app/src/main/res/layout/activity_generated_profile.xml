@@ -34,6 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="List Of Residents"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
 
@@ -44,27 +45,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:gravity="center">
+                android:layout_marginLeft="11dp"
+                android:gravity="start">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Firstname"
+                    android:text="Fullname"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
                     android:textSize="18sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Middlename"
-                    android:textSize="18sp"
-                    android:layout_marginLeft="20dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lastname"
-                    android:textSize="18sp"
-                    android:layout_marginLeft="20dp"/>
 
 
             </LinearLayout>

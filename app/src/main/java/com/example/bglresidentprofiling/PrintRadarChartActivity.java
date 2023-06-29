@@ -40,8 +40,8 @@ public class PrintRadarChartActivity extends AppCompatActivity {
         PieChart pieChart = findViewById(R.id.pieChart);
 
         ArrayList<PieEntry> profiles = new ArrayList<>();
-        profiles.add(new PieEntry(18, "Registered Voter"));
-        profiles.add(new PieEntry(12, "Not Registered Voter"));
+        profiles.add(new PieEntry(20, "Registered Voter"));
+        profiles.add(new PieEntry(2, "Not Registered Voter"));
 
         PieDataSet pieDataSet = new PieDataSet(profiles, "Registered Voters");
         pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
@@ -67,21 +67,45 @@ public class PrintRadarChartActivity extends AppCompatActivity {
 
     public void createPDF() {
         PdfDocument myPdfDocument = new PdfDocument();
-        PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(300, 400, 1).create();
+        PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(450, 600, 1).create();
         PdfDocument.Page myPage = myPdfDocument.startPage(myPageInfo);
 
 
         Paint myPaint = new Paint();
 
         String myString = "   " + "\n" +
-                "----------------------------- " + "Statistical Data" + " -----------------------------" + "\n" +
+                "------------------------------------------------------- "+"Statistical Data" + " -------------------------------------------------------" + "\n" +
                 "   " + "\n" +
                 "   " + "Registered Voters of Brgy. General Lim" + "   " + "\n" +
                 "     " + "                      Residents          |          Count" + "    " + "\n" +
-                "     " + "             Responded 'Yes'                        9" + "    " + "\n" +
-                "     " + "             Responded 'No'                         2" + "    " + "\n" +
+                "     " + "             Responded 'Yes'                       20" + "    " + "\n" +
+                "     " + "      List of names:" + "    " + "\n" +
+                "     " + "      1. Alonzo, Angeline Crisanto" + "    " + "\n" +
+                "     " + "      2. Alonzo, Rhoden Fernando" + "    " + "\n" +
+                "     " + "      3. Aquino, Alliya Cruz" + "    " + "\n" +
+                "     " + "      4. Basa, Camille Delgado" + "    " + "\n" +
+                "     " + "      5. Cabrera, Mari Ystinelli Axsa" + "    " + "\n" +
+                "     " + "      6. De Jesus, Carlo John Bartolo" + "    " + "\n" +
+                "     " + "      7. Francisco, Arnel De Leon" + "    " + "\n" +
+                "     " + "      8. Hernandez, Gabriel Hanz Macabre" + "    " + "\n" +
+                "     " + "      9. Jardino, Robert Samson" + "    " + "\n" +
+                "     " + "      10. Malit, Jenny Bartolome" + "    " + "\n" +
+                "     " + "      11. Naquil, Kristine Den Hoson" + "    " + "\n" +
+                "     " + "      12. Pangan, Micaella Abanilla" + "    " + "\n" +
+                "     " + "      13. Paule, Susan Balbuena" + "    " + "\n" +
+                "     " + "      14. Penaloza, Maria Salazar" + "    " + "\n" +
+                "     " + "      15. Samoza, Celine Montecarlo" + "    " + "\n" +
+                "     " + "      16. Sanchez, Maycie Dela Cruz" + "    " + "\n" +
+                "     " + "      17. Sanggalang, Marry Ann Santos" + "    " + "\n" +
+                "     " + "      18. Singca, Karen Kipte" + "    " + "\n" +
+                "     " + "      19. Singca, Rolando Toreno" + "    " + "\n" +
+                "     " + "      20. Sison, Gene Layug" + "    " + "\n" +
                 "   " + "\n" +
-                "  " + "Percentage of Registered Voter:   81%" + "    " + "\n";
+                "     " + "             Responded 'No'                         2" + "    " + "\n" +
+                "     " + "      1. Frenilla, Nina Basa" + "    " + "\n" +
+                "     " + "      2. Santos, Andrew Rivera" + "    " + "\n" +
+                "   " + "\n" +
+                "  " + "Percentage of Registered Voter:   90%" + "    " + "\n";
 
         int x = 10, y = 25;
 

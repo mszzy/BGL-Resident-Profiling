@@ -19,6 +19,27 @@
         android:theme="@style/Theme.BGLResidentProfiling"
         tools:targetApi="31">
         <activity
+            android:name=".PrintSoloParentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrintGenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SoloParentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenderReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonnelMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupAdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity

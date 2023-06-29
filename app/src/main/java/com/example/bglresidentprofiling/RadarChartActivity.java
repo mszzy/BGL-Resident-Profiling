@@ -35,7 +35,7 @@ public class RadarChartActivity extends AppCompatActivity {
         PieChart pieChart = findViewById(R.id.pieChart);
 
         ArrayList<PieEntry> profiles = new ArrayList<>();
-        profiles.add(new PieEntry(9, "Registered Voter"));
+        profiles.add(new PieEntry(20, "Registered Voter"));
         profiles.add(new PieEntry(2, "Not Registered Voter"));
 
         PieDataSet pieDataSet = new PieDataSet(profiles, "Registered Voters");

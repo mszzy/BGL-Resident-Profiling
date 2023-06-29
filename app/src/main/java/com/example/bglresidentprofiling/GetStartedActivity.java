@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class GetStartedActivity extends AppCompatActivity {
 
     TextView button;
@@ -23,5 +25,15 @@ public class GetStartedActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (FirebaseAuth.getInstance().getCurrentUser() != null){
+            Intent intent = new Intent(GetStartedActivity.this, LoginActivity.class);
+            startActivity(intent);
+        finish();
+        }
     }
 }

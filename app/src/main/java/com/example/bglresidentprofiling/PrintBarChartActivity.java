@@ -94,26 +94,63 @@ public class PrintBarChartActivity extends AppCompatActivity {
 
     public void createPDF() {
         PdfDocument myPdfDocument = new PdfDocument();
-        PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(300, 400, 1).create();
+        PdfDocument.PageInfo myPageInfo = new PdfDocument.PageInfo.Builder(450, 800, 3).create();
         PdfDocument.Page myPage = myPdfDocument.startPage(myPageInfo);
 
 
         Paint myPaint = new Paint();
 
         String myString = "   " + "\n" +
-                "----------------------------- "+"Statistical Data" + " -----------------------------" + "\n" +
+                "------------------------------------------------------- "+"Statistical Data" + " -------------------------------------------------------" + "\n" +
                 "   " + "\n" +
                 "   "+"Address: Brgy. General Lim  |  Population Count" + "   " + "\n" +
                 "     " +"             Purok 1:                                         3" + "    "+ "\n"+
-                "     " +"             Purok 2:                                         1" + "    "+ "\n"+
-                "     " +"             Purok 3:                                         2" + "    "+ "\n"+
-                "     " +"             Purok 4:                                         0" + "    "+ "\n"+
-                "     " +"             Purok 5:                                         2" + "    "+ "\n"+
-                "     " +"             Purok 6:                                         1" + "    "+ "\n"+
-                "     " +"             Purok 7:                                         1" + "    "+ "\n"+
-                "     " +"             Purok 8:                                         1" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Pangan, Micaella Abanilla" + "    "+ "\n"+
+                "     " +"                                2. Santos, Andrew Rivera" + "    "+ "\n"+
+                "     " +"                                3. Singca, Rolando Toreno" + "    "+ "\n"+
                 "   " + "\n" +
-                "   " +"Total Population Count:                            11" + "   "+ "\n";
+                "     " +"             Purok 2:                                         1" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Frenilla, Nina Basa" + "    "+ "\n"+
+                "   " + "\n" +
+                "     " +"             Purok 3:                                         3" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Malit, Jenny Bartolome" + "    "+ "\n"+
+                "     " +"                                2. Naquil, Kristine Den Hoson" + "    "+ "\n"+
+                "     " +"                                3. Paule, Susan Balbuena" + "    "+ "\n"+
+                "   " + "\n" +
+                "     " +"             Purok 4:                                         7" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Alonzo, Angeline Crisanto"+ "\n"+
+                "     " +"                                2. Basa, Camille Delgado"  + "    "+ "\n"+
+                "     " +"                                3. De Jesus, Carlo John Bartolo"  + "\n"+
+                "     " +"                                4. Hernandez, Gabriel Hanz Macabre"+ "\n"+
+                "     " +"                                5. Samoza, Celine Montecarlo"  + "    "+ "\n"+
+                "     " +"                                6. Singca, Karen Kipte"  + "\n"+
+                "     " +"                                7. Sison, Gene Layug"  + "\n"+
+                "   " + "\n" +
+                "     " +"             Purok 5:                                         3" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Jardino, Robert Samson"+ "\n"+
+                "     " +"                                2. Penaloza, Maria Salazar"  + "    "+ "\n"+
+                "     " +"                                3. Sanggalang, Marry Ann Santos"  + "\n"+
+                "   " + "\n" +
+                "     " +"             Purok 6:                                         2" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Alonzo, Rhoden Fernando"+ "\n"+
+                "     " +"                                2. Cabrera, Mari Ystinelli Axsa"  + "    "+ "\n"+
+                "   " + "\n" +
+                "     " +"             Purok 7:                                         1" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Francisco, Arnel De Leon"+ "\n"+
+                "   " + "\n" +
+                "     " +"             Purok 8:                                         2" + "    "+ "\n"+
+                "     " +"                             List of names:" + "    "+ "\n"+
+                "     " +"                                1. Aquino, Alliya Cruz"+ "\n"+
+                "     " +"                                2. Sanchez, Maycie Dela Cruz"  + "    "+ "\n"+
+                "   " + "\n" +
+                "   " +"Total Population Count:                            22" + "   "+ "\n";
 
         int x = 10, y = 25;
 
@@ -146,13 +183,13 @@ public class PrintBarChartActivity extends AppCompatActivity {
 
     public void fillBarChart(){
         barDataCharts.clear();
-        barDataCharts.add(new BarDataChart("Purok 1 GL", 7));
-        barDataCharts.add(new BarDataChart("Purok 2 GL", 4));
-        barDataCharts.add(new BarDataChart("Purok 3 GL", 2));
-        barDataCharts.add(new BarDataChart("Purok 4 GL", 1));
-        barDataCharts.add(new BarDataChart("Purok 5 GL", 2));
-        barDataCharts.add(new BarDataChart("Purok 6 GL", 3));
-        barDataCharts.add(new BarDataChart("Purok 7 GL", 8));
-        barDataCharts.add(new BarDataChart("Purok 8 GL", 3));
+        barDataCharts.add(new BarDataChart("Purok 1 GL", 3));
+        barDataCharts.add(new BarDataChart("Purok 2 GL", 1));
+        barDataCharts.add(new BarDataChart("Purok 3 GL", 3));
+        barDataCharts.add(new BarDataChart("Purok 4 GL", 7));
+        barDataCharts.add(new BarDataChart("Purok 5 GL", 3));
+        barDataCharts.add(new BarDataChart("Purok 6 GL", 2));
+        barDataCharts.add(new BarDataChart("Purok 7 GL", 1));
+        barDataCharts.add(new BarDataChart("Purok 8 GL", 2));
     }
 }
