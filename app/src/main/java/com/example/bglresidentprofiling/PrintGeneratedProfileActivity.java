@@ -86,7 +86,11 @@ public class PrintGeneratedProfileActivity extends AppCompatActivity {
         Paint myPaint = new Paint();
 
         String myString = "   " + "\n" +
-                "------------------------------------------------------- " + "List of Residents" + " -------------------------------------------------------" + "\n" +
+                "   " + "\n" +
+                "   " + "\n" +
+                "   " + "\n" +
+                "   " + "\n" +
+                "     " + "List of Residents" + " " + "\n" +
                 "   " + "\n" +
                 "          " + "Lastname  |  Firstname   |  Middlename" + "   " + "\n" +
                 "   " + "\n" +
